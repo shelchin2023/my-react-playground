@@ -35,7 +35,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-         if [ -f "${{ github.workspace }}/bun.lockdb" ]; then
+         if [ -f "${{ github.workspace }}/bun.lockb" ]; then
             echo "manager=bun" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=bunx" >> $GITHUB_OUTPUT
